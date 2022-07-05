@@ -1,11 +1,11 @@
 // 基础类型推断
 // 一、从右向左推断，从表达式右边的值推断出表达式左边变量的类型
 // 初始化变量
-let aa; // 如果不指定变量类型，那么ts就会认为是any类型 let aa: any
+/* let aa; // 如果不指定变量类型，那么ts就会认为是any类型 let aa: any
 let a = 1; // 推断为number类型 let a: number
 let b = [1, null, 'a'] // 当需要从多个类型中推断出一个类型的时候，ts会从中推断出兼容所有类型的通用类型，这就是最佳通用类型推断，推断为let b: (string | number | null)[]，使用联合类型
 let c = {x: 1, y: 'a'} // 推断为let c: { x: number; y: string; }
-let d = (x = 1) => x + 1 // 推断为let d: (x?: number) => number
+let d = (x = 1) => x + 1 // 推断为let d: (x?: number) => number */
 
 
 
