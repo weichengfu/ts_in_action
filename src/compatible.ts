@@ -62,7 +62,7 @@ let handler2 = (a: number, b: number, c: number) => {}
 // 1.2可选参数和剩余参数
 // 具有可选参数和剩余参数会遵循其他原则
 // 定义三个参数
-let a = (p1: number, p2: number) => {} // 固定参数
+/* let a = (p1: number, p2: number) => {} // 固定参数
 let b = (p1?: number, p2?: number) => {}// 可选参数
 let c = (...args: number[]) => {}// 剩余参数
 a = b // 固定参数可以兼容可选参数
@@ -70,7 +70,7 @@ a = c // 固定参数可以兼容剩余参数的
 // b = a // 可选参数不兼容固定参数，如需兼容可以关闭"strictFunctionTypes": false
 // b = c // 可选参数不兼容剩余参数，如需兼容可以关闭"strictFunctionTypes": false
 c = a // 剩余参数可以兼容固定参数
-c = b // 剩余参数可以兼容可选参数
+c = b // 剩余参数可以兼容可选参数 */
 
 
 
