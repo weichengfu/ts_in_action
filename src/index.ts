@@ -6,6 +6,7 @@ import "./class.ts"
 import "./class-interface.ts"
 import "./generics.ts"
 import "./advanced-1.ts"
+import "./advanced-2.ts"
 
 let hello:string = 'Hello TypeScript'
 document.querySelectorAll('.app')[0].innerHTML="Hello TypeScript"

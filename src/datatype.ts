@@ -36,7 +36,7 @@ let tuple:[number, string] = [0,'1']
 // computer = (a, b) => a + b
 
 // 对象注解
-let obj: object = {x: 1, y: 2} 
+// let obj: object = {x: 1, y: 2} 
 // 如果使用这种简单的object来给对象增加注解是不允许修改对象的属性值
 // obj.x = 3 // 报错，类型“object”上不存在属性“x”。
 // 需要将对象注解指定到对象属性
