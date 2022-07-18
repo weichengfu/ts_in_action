@@ -22,5 +22,7 @@ namespace Shape {
 console.log(Shape.cricle(2)) // 要使用另一个命名空间的方法，需要先通过三斜线指令引入
 console.log(Shape.square(2))
 
+
+// 命名空间取别名方式 import ，注意这里的import 和模块中的import 没有任何关系
 import cricle = Shape.cricle
 console.log(cricle(2))
