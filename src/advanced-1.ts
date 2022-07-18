@@ -19,7 +19,7 @@ let pet: DogInterface & CatInterface = {
 // 二、联合类型
 // 声明的类型并不确定，可以为多个类型中的一个
 // 1，基本的联合类型
-let a: number | string = 1
+// let a: number | string = 1
 // 字面量类型，我们不仅限定一个变量的类型，也限定变量的取值
 let b: 'a' | 'b' | 'c' // 定义字符串字面量的联合类型
 let c: 1 | 2 | 3// 定义数字字面量的联合类型

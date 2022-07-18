@@ -126,10 +126,10 @@ function overload(a: any, b: any): any {} // 具体的实现就是源函数
 
 // 三、枚举兼容性
 // 枚举类型和数值类型是完全兼容的
-enum Fruit { Apple, Banana }
-enum Color { Red, Yellow }
-let fruit: Fruit.Apple = 1
-let no: number = Fruit.Apple
+// enum Fruit { Apple, Banana }
+// enum Color { Red, Yellow }
+// let fruit: Fruit.Apple = 1
+// let no: number = Fruit.Apple
 
 // let color: Color.Red = Fruit.Apple // 枚举之间是不兼容的
 
@@ -161,31 +161,31 @@ bb = aa */
 
 // 如果类中具有私有成员
 // 定义类
-class A {
-  constructor(p: number, q: number) {}
-  id: number = 1
-  private name: string = '' // 具有私有成员
-}
+// class A {
+//   constructor(p: number, q: number) {}
+//   id: number = 1
+//   private name: string = '' // 具有私有成员
+// }
 // 定义类
-class B {
-  static s = 1
-  constructor(p: number) {}
-  id: number = 2
-  private name: string = '' // 具有私有成员
-}
+// class B {
+//   static s = 1
+//   constructor(p: number) {}
+//   id: number = 2
+//   private name: string = '' // 具有私有成员
+// }
 // 创建两个实例
-let aa = new A(1, 2)
-let bb = new B(1)
+// let aa = new A(1, 2)
+// let bb = new B(1)
 // 可以看出如果两个类中具有私有成员，那么他们就不兼容了，这时候只有父类和子类是相互兼容的
 // aa = bb // 报错，类型具有私有属性“name”的单独声明
 // bb = aa // 报错，类型具有私有属性“name”的单独声明
 
 // 定义一个A的子类C 
 // 父类和子类是相互兼容的
-class C extends A {}
-let cc = new C(1, 2) // 创建C的实例
-aa = cc
-cc = aa
+// class C extends A {}
+// let cc = new C(1, 2) // 创建C的实例
+// aa = cc
+// cc = aa
 
 
 
